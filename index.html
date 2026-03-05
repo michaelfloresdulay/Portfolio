@@ -3,33 +3,33 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael Dulay | Portfolio</title>
+    <title>Michael Dulay | Professional Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
     <script src="https://unpkg.com/lucide@latest"></script>
     <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
         body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
-        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(15px); }
+        .glass { background: rgba(255, 255, 255, 0.75); backdrop-filter: blur(20px); }
         @keyframes grow { 0%, 100% { transform: scaleY(0.8); } 50% { transform: scaleY(1.2); } }
         .animate-grow { animation: grow 1.5s ease-in-out infinite; }
         .blob { position: absolute; border-radius: 50%; filter: blur(80px); z-index: -1; }
     </style>
 </head>
-<body class="bg-[#fcfdfe] text-slate-900 overflow-x-hidden">
+<body class="bg-[#fcfdfe] text-slate-900 selection:bg-emerald-100 overflow-x-hidden">
 
-    <div class="blob w-[500px] h-[500px] bg-emerald-100/40 top-[-10%] right-[-10%]"></div>
-    <div class="blob w-[400px] h-[400px] bg-blue-100/30 bottom-[-10%] left-[-10%]"></div>
+    <div class="blob w-[600px] h-[600px] bg-emerald-100/40 top-[-10%] right-[-10%]"></div>
+    <div class="blob w-[500px] h-[500px] bg-blue-100/30 bottom-[-10%] left-[-10%]"></div>
 
     <nav class="fixed top-0 w-full glass z-50 border-b border-slate-100">
         <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
-            <div class="flex items-center space-x-2 group">
+            <div class="flex items-center space-x-2 group cursor-pointer">
                 <div class="w-10 h-10 bg-emerald-600 text-white flex items-center justify-center rounded-xl font-black text-xl group-hover:rotate-12 transition-transform shadow-lg shadow-emerald-200">M</div>
                 <span class="font-black text-2xl tracking-tighter">DULAY</span>
             </div>
             <div class="hidden md:flex items-center space-x-8 text-sm font-bold text-slate-500">
                 <a href="#services" class="hover:text-emerald-600 transition-colors uppercase tracking-widest">Services</a>
                 <a href="#experience" class="hover:text-emerald-600 transition-colors uppercase tracking-widest">Experience</a>
-                <a href="#video" class="hover:text-emerald-600 transition-colors uppercase tracking-widest">About Me</a>
+                <a href="#education" class="hover:text-emerald-600 transition-colors uppercase tracking-widest">Education</a>
                 <a href="#contact" class="bg-slate-900 text-white px-6 py-3 rounded-2xl hover:bg-emerald-600 transition-all shadow-xl shadow-slate-200">Hire Me</a>
             </div>
         </div>
@@ -37,18 +37,18 @@
 
     <section class="relative pt-40 pb-24 px-6">
         <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
-            <div class="space-y-8">
+            <div class="space-y-8 animate-fade-in">
                 <div class="inline-flex items-center space-x-2 bg-emerald-50 text-emerald-700 px-4 py-1.5 rounded-full text-sm font-bold border border-emerald-100">
-                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    <i data-lucide="sparkles" class="w-4 h-4 text-emerald-500"></i>
                     <span>Available for Remote Operations</span>
                 </div>
                 <h1 class="text-6xl md:text-7xl font-black leading-[0.95] tracking-tighter">
-                    Precision <br>
-                    Driven <span class="text-emerald-600">Solutions</span><br>
-                    For Your Business.
+                    Turning Data <br>
+                    Into <span class="text-emerald-600 underline decoration-emerald-100 underline-offset-[12px] decoration-8">Organized</span><br>
+                    Results.
                 </h1>
                 <p class="text-xl text-slate-600 leading-relaxed max-w-xl">
-                    Hi, I'm <span class="font-bold text-slate-900">Michael Dulay</span>. A professional Bookkeeper and Admin Specialist. I transform complex operational data into organized results.
+                    Hi, I'm <span class="font-bold text-slate-900">Michael Dulay</span>. A professional Bookkeeper and Admin Specialist. I transform complex operational data into organized, actionable results with total precision.
                 </p>
                 <div class="flex flex-wrap gap-4">
                     <a href="#contact" class="px-8 py-4 bg-slate-900 text-white rounded-2xl font-black text-lg flex items-center group hover:bg-emerald-600 transition-all shadow-2xl shadow-slate-100">
@@ -71,7 +71,7 @@
         </div>
     </section>
 
-    <section id="video" class="py-24 px-6 bg-slate-50">
+    <section id="video" class="py-24 px-6 bg-slate-50 border-y border-slate-100">
         <div class="max-w-4xl mx-auto text-center space-y-12">
             <h2 class="text-4xl font-black tracking-tighter flex items-center justify-center">
                 <i data-lucide="play-circle" class="w-10 h-10 mr-4 text-emerald-600"></i>
@@ -80,66 +80,193 @@
             <div class="rounded-[3rem] overflow-hidden shadow-2xl border-[8px] border-white bg-black aspect-video">
                 <video class="w-full h-full object-cover" controls>
                     <source src="./your-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
                 </video>
             </div>
         </div>
     </section>
 
+    <section class="py-24 px-6 bg-white relative">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-center text-xs font-black text-slate-400 uppercase tracking-[0.4em] mb-16">The Professional Toolkit</h2>
+            <div class="grid grid-cols-3 md:grid-cols-5 lg:grid-cols-9 gap-10">
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center group-hover:shadow-xl transition-all"><i data-lucide="file-spreadsheet" class="text-orange-600"></i></div>
+                    <span class="mt-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest">MS Office</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center group-hover:shadow-xl transition-all"><i data-lucide="layout" class="text-blue-500"></i></div>
+                    <span class="mt-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Workspace</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center group-hover:shadow-xl transition-all"><i data-lucide="trending-up" class="text-emerald-600"></i></div>
+                    <span class="mt-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest">QuickBooks</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center group-hover:shadow-xl transition-all"><i data-lucide="palette" class="text-cyan-500"></i></div>
+                    <span class="mt-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Canva</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center group-hover:shadow-xl transition-all"><i data-lucide="video" class="text-slate-900"></i></div>
+                    <span class="mt-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest">CapCut</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center group-hover:shadow-xl transition-all"><i data-lucide="calendar" class="text-blue-600"></i></div>
+                    <span class="mt-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Calendly</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center group-hover:shadow-xl transition-all"><i data-lucide="video-off" class="text-blue-400"></i></div>
+                    <span class="mt-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Zoom</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center group-hover:shadow-xl transition-all"><i data-lucide="users" class="text-indigo-600"></i></div>
+                    <span class="mt-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Teams</span>
+                </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-16 h-16 bg-slate-50 rounded-2xl flex items-center justify-center group-hover:shadow-xl transition-all"><i data-lucide="mail" class="text-red-500"></i></div>
+                    <span class="mt-4 text-[10px] font-bold text-slate-400 uppercase tracking-widest">Email</span>
+                </div>
+            </div>
+        </div>
+    </section>
+
     <section id="services" class="py-32 px-6">
-        <div class="max-w-7xl mx-auto text-center">
-            <h2 class="text-5xl font-black tracking-tighter mb-20">My Core Services</h2>
+        <div class="max-w-7xl mx-auto">
+            <div class="mb-20 text-center space-y-4">
+                <h2 class="text-5xl font-black tracking-tighter">My Core Services</h2>
+                <p class="text-slate-500 text-lg italic">Delivering accuracy and efficiency across multiple digital business domains.</p>
+            </div>
             <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="p-8 bg-white border border-slate-100 rounded-[3rem] hover:shadow-2xl transition-all text-left">
-                    <div class="w-12 h-12 bg-emerald-600 text-white rounded-2xl flex items-center justify-center mb-6">
-                        <i data-lucide="database"></i>
-                    </div>
+                    <div class="w-12 h-12 bg-emerald-600 text-white rounded-2xl flex items-center justify-center mb-6"><i data-lucide="database"></i></div>
                     <h3 class="text-xl font-black mb-4">Admin & Ops</h3>
                     <p class="text-slate-500 text-sm mb-6">High-precision data management, payroll, and virtual assistance.</p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">MS Office</span>
-                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">Payroll</span>
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full border">MS OFFICE</span>
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full border">PAYROLL</span>
                     </div>
                 </div>
                 <div class="p-8 bg-white border border-slate-100 rounded-[3rem] hover:shadow-2xl transition-all text-left">
-                    <div class="w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6">
-                        <i data-lucide="shopping-cart"></i>
-                    </div>
-                    <h3 class="text-xl font-black mb-4">E-Commerce</h3>
-                    <p class="text-slate-500 text-sm mb-6">Shopee/Lazada management from listings to fulfillment.</p>
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6"><i data-lucide="shopping-cart"></i></div>
+                    <h3 class="text-xl font-black mb-4">E-Commerce Expert</h3>
+                    <p class="text-slate-500 text-sm mb-6">End-to-end Shopee/Lazada management from listings to fulfillment.</p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">Shopee</span>
-                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">Lazada</span>
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full border">SHOPEE</span>
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full border">LAZADA</span>
                     </div>
                 </div>
                 <div class="p-8 bg-white border border-slate-100 rounded-[3rem] hover:shadow-2xl transition-all text-left">
-                    <div class="w-12 h-12 bg-purple-600 text-white rounded-2xl flex items-center justify-center mb-6">
-                        <i data-lucide="trending-up"></i>
-                    </div>
+                    <div class="w-12 h-12 bg-emerald-900 text-white rounded-2xl flex items-center justify-center mb-6"><i data-lucide="trending-up"></i></div>
                     <h3 class="text-xl font-black mb-4">Bookkeeping</h3>
                     <p class="text-slate-500 text-sm mb-6">NC III Certified professional managing financial accuracy.</p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">QuickBooks</span>
-                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">Audit</span>
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full border">QUICKBOOKS</span>
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full border">AUDIT</span>
                     </div>
                 </div>
                 <div class="p-8 bg-white border border-slate-100 rounded-[3rem] hover:shadow-2xl transition-all text-left">
-                    <div class="w-12 h-12 bg-orange-500 text-white rounded-2xl flex items-center justify-center mb-6">
-                        <i data-lucide="book-open"></i>
-                    </div>
-                    <h3 class="text-xl font-black mb-4">Education</h3>
-                    <p class="text-slate-500 text-sm mb-6">TEFL certified lesson planning and instructions.</p>
+                    <div class="w-12 h-12 bg-purple-600 text-white rounded-2xl flex items-center justify-center mb-6"><i data-lucide="book-open"></i></div>
+                    <h3 class="text-xl font-black mb-4">Education Support</h3>
+                    <p class="text-slate-500 text-sm mb-6">TEFL certified lesson planning and personalized instruction.</p>
                     <div class="flex flex-wrap gap-2">
-                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">TEFL</span>
-                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">Tutoring</span>
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full border">TEFL</span>
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full border">TUTORING</span>
                     </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="contact" class="py-40 px-6 bg-slate-900 text-white">
+    <section id="experience" class="py-32 px-6 bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto">
+            <div class="flex items-center space-x-6 mb-24">
+                <div class="h-px bg-emerald-500/50 flex-grow"></div>
+                <h2 class="text-4xl font-black tracking-tighter">Work History</h2>
+                <div class="h-px bg-emerald-500/50 flex-grow"></div>
+            </div>
+
+            <div class="space-y-20">
+                <div class="group relative pl-12 border-l border-emerald-500/30">
+                    <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-emerald-600 border-[6px] border-slate-900 group-hover:scale-150 transition-transform"></div>
+                    <h3 class="text-3xl font-black group-hover:text-emerald-400 transition-colors">Part-Time Tutor</h3>
+                    <p class="text-emerald-500 font-bold uppercase tracking-widest text-sm mb-8">Freelance • Aug 2023 — Ongoing</p>
+                    <div class="space-y-4">
+                        <div class="flex items-start text-slate-400 hover:text-white transition-colors">
+                            <i data-lucide="check-circle" class="w-5 h-5 mr-4 text-emerald-500 shrink-0"></i>
+                            <span class="text-base font-medium">Instruction in English, Science, and Math for elementary students.</span>
+                        </div>
+                        <div class="flex items-start text-slate-400 hover:text-white transition-colors">
+                            <i data-lucide="check-circle" class="w-5 h-5 mr-4 text-emerald-500 shrink-0"></i>
+                            <span class="text-base font-medium">Developed customized lesson plans and learning materials.</span>
+                        </div>
+                        <div class="flex items-start text-slate-400 hover:text-white transition-colors">
+                            <i data-lucide="check-circle" class="w-5 h-5 mr-4 text-emerald-500 shrink-0"></i>
+                            <span class="text-base font-medium">Tracked student progress and adjusted methods for improvement.</span>
+                        </div>
+                    </div>
+                </div>
+
+                <div class="group relative pl-12 border-l border-slate-700">
+                    <div class="absolute -left-3 top-0 w-6 h-6 rounded-full bg-slate-700 border-[6px] border-slate-900 group-hover:bg-emerald-600 group-hover:scale-150 transition-transform"></div>
+                    <h3 class="text-3xl font-black group-hover:text-emerald-400 transition-colors">Salesman / Admin Support</h3>
+                    <p class="text-emerald-500 font-bold uppercase tracking-widest text-sm mb-8">Ace Lights Trading • July 2020 — April 2023</p>
+                    <div class="grid md:grid-cols-2 gap-4">
+                        <div class="flex items-start bg-white/5 p-4 rounded-2xl border border-white/5"><i data-lucide="check" class="text-emerald-500 mr-3 shrink-0"></i><span class="text-sm">Electronic quotations & sales records.</span></div>
+                        <div class="flex items-start bg-white/5 p-4 rounded-2xl border border-white/5"><i data-lucide="check" class="text-emerald-500 mr-3 shrink-0"></i><span class="text-sm">Monthly payroll for branch staff.</span></div>
+                        <div class="flex items-start bg-white/5 p-4 rounded-2xl border border-white/5"><i data-lucide="check" class="text-emerald-500 mr-3 shrink-0"></i><span class="text-sm">Daily sales & cash reconciliation.</span></div>
+                        <div class="flex items-start bg-white/5 p-4 rounded-2xl border border-white/5"><i data-lucide="check" class="text-emerald-500 mr-3 shrink-0"></i><span class="text-sm">Shopee/Lazada order management (50+/week).</span></div>
+                        <div class="flex items-start bg-white/5 p-4 rounded-2xl border border-white/5"><i data-lucide="check" class="text-emerald-500 mr-3 shrink-0"></i><span class="text-sm">Optimized listings for customer trust.</span></div>
+                        <div class="flex items-start bg-white/5 p-4 rounded-2xl border border-white/5"><i data-lucide="check" class="text-emerald-500 mr-3 shrink-0"></i><span class="text-sm">Facebook marketing & customer support.</span></div>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="education" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto">
+            <h2 class="text-5xl font-black tracking-tighter text-center mb-20">Academic Records</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+                <div class="p-10 bg-[#f8fafc] border border-slate-100 rounded-[3rem] hover:bg-white hover:shadow-2xl transition-all relative group overflow-hidden">
+                    <div class="absolute top-0 right-0 px-6 py-2 rounded-bl-3xl text-[10px] font-black uppercase tracking-widest bg-red-50 text-red-600 border-b border-l">Incomplete</div>
+                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-8 group-hover:rotate-6 transition-transform"><i data-lucide="graduation-cap"></i></div>
+                    <div class="text-xs font-black text-emerald-600 uppercase tracking-widest mb-2">2023 - Jan 2026</div>
+                    <h3 class="text-xl font-black mb-2 leading-tight">MS Biology</h3>
+                    <p class="text-slate-500 font-bold text-sm italic">Central Luzon State University</p>
+                </div>
+                <div class="p-10 bg-[#f8fafc] border border-slate-100 rounded-[3rem] hover:bg-white hover:shadow-2xl transition-all relative group overflow-hidden">
+                    <div class="absolute top-0 right-0 px-6 py-2 rounded-bl-3xl text-[10px] font-black uppercase tracking-widest bg-blue-50 text-blue-600 border-b border-l">Certified</div>
+                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-8 group-hover:rotate-6 transition-transform"><i data-lucide="award"></i></div>
+                    <div class="text-xs font-black text-emerald-600 uppercase tracking-widest mb-2">2025</div>
+                    <h3 class="text-xl font-black mb-2 leading-tight">Teacher Certificate Program</h3>
+                    <p class="text-slate-500 font-bold text-sm italic">Iqra Development Academy, Inc.</p>
+                </div>
+                <div class="p-10 bg-[#f8fafc] border border-slate-100 rounded-[3rem] hover:bg-white hover:shadow-2xl transition-all relative group overflow-hidden">
+                    <div class="absolute top-0 right-0 px-6 py-2 rounded-bl-3xl text-[10px] font-black uppercase tracking-widest bg-emerald-50 text-emerald-600 border-b border-l">Graduate</div>
+                    <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-8 group-hover:rotate-6 transition-transform"><i data-lucide="graduation-cap"></i></div>
+                    <div class="text-xs font-black text-emerald-600 uppercase tracking-widest mb-2">2018 - 2022</div>
+                    <h3 class="text-xl font-black mb-2 leading-tight">BS Biology - Biotechnology</h3>
+                    <p class="text-slate-500 font-bold text-sm italic">Central Luzon State University</p>
+                </div>
+                <div class="p-10 bg-[#f8fafc] border border-slate-100 rounded-[3rem] hover:bg-white transition-all relative group overflow-hidden">
+                    <div class="absolute top-0 right-0 px-6 py-2 rounded-bl-3xl text-[10px] font-black uppercase bg-slate-50 text-slate-500 border-b border-l">Graduate</div>
+                    <div class="text-xs font-black text-emerald-600 uppercase tracking-widest mb-2">2016 - 2018</div>
+                    <h3 class="text-xl font-black mb-2 leading-tight">ABM (SHS)</h3>
+                    <p class="text-slate-500 font-bold text-sm italic">Dr. Ramon de Santos National HS</p>
+                </div>
+                <div class="p-10 bg-[#f8fafc] border border-slate-100 rounded-[3rem] hover:bg-white transition-all relative group overflow-hidden">
+                    <div class="absolute top-0 right-0 px-6 py-2 rounded-bl-3xl text-[10px] font-black uppercase bg-slate-50 text-slate-500 border-b border-l">Graduate</div>
+                    <div class="text-xs font-black text-emerald-600 uppercase tracking-widest mb-2">2012 - 2016</div>
+                    <h3 class="text-xl font-black mb-2 leading-tight">Special ICT Class (JHS)</h3>
+                    <p class="text-slate-500 font-bold text-sm italic">Dr. Ramon de Santos National HS</p>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <section id="contact" class="py-40 px-6 bg-slate-900 text-white relative">
         <div class="max-w-5xl mx-auto text-center space-y-10">
-            <h2 class="text-6xl font-black tracking-tighter">Let's solve your <br>operational <span class="text-emerald-500">challenges.</span></h2>
+            <h2 class="text-5xl font-black tracking-tighter leading-tight">Let's solve your <br>operational <span class="text-emerald-500">challenges.</span></h2>
             <div class="flex flex-col md:flex-row gap-6 justify-center">
                 <a href="mailto:michaelfloresdulay@gmail.com" class="bg-white text-slate-900 p-6 rounded-3xl flex items-center space-x-4 hover:bg-emerald-50 transition-all">
                     <i data-lucide="mail" class="text-emerald-600"></i>
@@ -150,13 +277,10 @@
                     <span class="font-bold">0995-024-5384</span>
                 </div>
             </div>
-            <p class="text-slate-500 uppercase tracking-widest text-xs font-black">© 2026 Michael Dulay • Nueva Ecija, PH</p>
+            <p class="text-slate-500 uppercase tracking-widest text-xs font-black pt-10">© 2026 Michael Dulay • Nueva Ecija, PH</p>
         </div>
     </section>
 
-    <script>
-        // Initialize Lucide icons
-        lucide.createIcons();
-    </script>
+    <script> lucide.createIcons(); </script>
 </body>
 </html>
