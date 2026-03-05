@@ -80,7 +80,7 @@
     <section class="py-24 px-6 bg-white relative">
         <div class="max-w-7xl mx-auto">
             <h2 class="text-center text-sm font-black text-slate-400 uppercase tracking-[0.5em] mb-20">The Professional Toolkit</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 lg:grid-cols-4 gap-8 text-center font-black text-slate-900 text-[10px] uppercase tracking-widest">
+            <div class="grid grid-cols-2 md:grid-cols-3 lg:grid-cols-5 gap-8 text-center font-black text-slate-900 text-[10px] uppercase tracking-widest">
                 <div class="flex flex-col items-center group">
                     <div class="w-full h-24 flex items-center justify-center p-4 bg-slate-50 rounded-3xl group-hover:shadow-xl transition-all duration-500">
                         <img src="./microsoft office.png" alt="MS Office" class="max-h-full object-contain">
@@ -129,6 +129,13 @@
                     </div>
                     <span class="mt-4">MS Teams</span>
                 </div>
+                <div class="flex flex-col items-center group">
+                    <div class="w-full h-24 flex items-center justify-center p-4 bg-slate-50 rounded-3xl group-hover:shadow-xl transition-all duration-500">
+                        <img src="./Email.png" alt="Email" class="max-h-full object-contain" onerror="this.style.display='none'; this.nextElementSibling.style.display='block';">
+                        <i data-lucide="mail" class="w-8 h-8 text-red-500" style="display:none;"></i>
+                    </div>
+                    <span class="mt-4">Email</span>
+                </div>
             </div>
         </div>
     </section>
@@ -139,7 +146,7 @@
                 <h2 class="text-5xl font-black tracking-tighter uppercase">Professional Services</h2>
                 <div class="w-24 h-2 bg-blue-600 mx-auto rounded-full"></div>
             </div>
-            <div class="grid md:grid-cols-2 lg:grid-cols-3 gap-8">
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
                 <div class="p-10 bg-white rounded-[3rem] border border-slate-100 hover:border-blue-500 hover:shadow-xl transition-all duration-500 group">
                     <div class="w-14 h-14 bg-slate-100 text-slate-900 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white">
                         <i data-lucide="database" class="w-8 h-8"></i>
@@ -161,21 +168,13 @@
                     <h3 class="text-2xl font-black mb-4">Bookkeeping</h3>
                     <p class="text-slate-500 text-sm">NC III Certified professional managing financial accuracy and records.</p>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="video" class="py-24 px-6 bg-white">
-        <div class="max-w-4xl mx-auto text-center space-y-12">
-            <h2 class="text-4xl font-black tracking-tighter flex items-center justify-center">
-                <i data-lucide="play-circle" class="w-10 h-10 mr-4 text-blue-600"></i>
-                Get To Know Me
-            </h2>
-            <div class="rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-slate-100 bg-black aspect-video">
-                <video class="w-full h-full object-cover" controls poster="./your-photo.jpg">
-                    <source src="./your-video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
-                </video>
+                <div class="p-10 bg-white rounded-[3rem] border border-slate-100 hover:border-blue-500 hover:shadow-xl transition-all duration-500 group">
+                    <div class="w-14 h-14 bg-slate-100 text-slate-900 rounded-2xl flex items-center justify-center mb-8 group-hover:bg-blue-600 group-hover:text-white">
+                        <i data-lucide="book-open" class="w-8 h-8"></i>
+                    </div>
+                    <h3 class="text-2xl font-black mb-4">Education Support</h3>
+                    <p class="text-slate-500 text-sm">TEFL certified lesson planning and personalized instruction.</p>
+                </div>
             </div>
         </div>
     </section>
@@ -252,7 +251,7 @@
                 </div>
 
                 <div class="p-10 bg-slate-50 rounded-[3.5rem] border border-slate-100 relative group overflow-hidden hover:bg-white hover:shadow-2xl transition-all duration-500">
-                    <div class="absolute top-0 right-0 px-6 py-2 rounded-bl-3xl text-[10px] font-black uppercase tracking-widest bg-emerald-50 text-emerald-600 border-b border-l">Graduate</div>
+                    <div class="absolute top-0 right-0 px-6 py-2 rounded-bl-3xl text-[10px] font-black uppercase tracking-widest bg-blue-50 text-blue-600 border-b border-l">Graduate</div>
                     <div class="w-14 h-14 bg-white rounded-2xl shadow-sm flex items-center justify-center mb-8"><i data-lucide="graduation-cap"></i></div>
                     <p class="text-xs font-black text-blue-600 uppercase tracking-widest mb-2">2018 - 2022</p>
                     <h3 class="text-2xl font-black mb-2 leading-tight">BS Biology</h3>
@@ -276,12 +275,27 @@
                 </div>
 
                 <div class="p-10 bg-slate-900 rounded-[3.5rem] border border-slate-800 relative group overflow-hidden shadow-2xl">
-                    <div class="absolute top-0 right-0 px-6 py-2 rounded-bl-3xl text-[10px] font-black uppercase tracking-widest bg-emerald-500 text-white border-b border-l">Certified</div>
-                    <div class="w-14 h-14 bg-white/10 text-emerald-400 rounded-2xl flex items-center justify-center mb-8"><i data-lucide="award"></i></div>
+                    <div class="absolute top-0 right-0 px-6 py-2 rounded-bl-3xl text-[10px] font-black uppercase tracking-widest bg-blue-500 text-white border-b border-l">Certified</div>
+                    <div class="w-14 h-14 bg-white/10 text-blue-400 rounded-2xl flex items-center justify-center mb-8"><i data-lucide="award"></i></div>
                     <h3 class="text-2xl font-black mb-2 text-white">Bookkeeping NC III</h3>
-                    <p class="text-emerald-500 font-bold italic text-sm">Professional Certification</p>
+                    <p class="text-blue-500 font-bold italic text-sm">Professional Certification</p>
                 </div>
 
+            </div>
+        </div>
+    </section>
+
+    <section id="video" class="py-32 px-6 bg-slate-50 border-t border-slate-200">
+        <div class="max-w-4xl mx-auto text-center space-y-12">
+            <h2 class="text-4xl font-black tracking-tighter flex items-center justify-center uppercase">
+                <i data-lucide="play-circle" class="w-10 h-10 mr-4 text-blue-600"></i>
+                Get To Know Me
+            </h2>
+            <div class="rounded-[3rem] overflow-hidden shadow-2xl border-[12px] border-white bg-black aspect-video">
+                <video class="w-full h-full object-cover" controls poster="./your-photo.jpg">
+                    <source src="./your-video.mp4" type="video/mp4">
+                    Your browser does not support the video tag.
+                </video>
             </div>
         </div>
     </section>
