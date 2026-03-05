@@ -3,195 +3,160 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Michael F. Dulay | Professional Portfolio</title>
+    <title>Michael Dulay | Portfolio</title>
     <script src="https://cdn.tailwindcss.com"></script>
-    <link href="https://unpkg.com/aos@2.3.1/dist/aos.css" rel="stylesheet">
-    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0/css/all.min.css">
+    <script src="https://unpkg.com/lucide@latest"></script>
+    <link href="https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:wght@400;600;800&display=swap" rel="stylesheet">
     <style>
-        .glass { background: rgba(255, 255, 255, 0.9); backdrop-filter: blur(10px); }
-        .emerald-gradient { background: linear-gradient(135deg, #065f46 0%, #10b981 100%); }
-        .timeline-dot { width: 12px; height: 12px; background: #10b981; border-radius: 50%; position: absolute; left: -6px; top: 8px; }
-        /* Animation for the hero image */
-        .image-float { animation: floating 3s ease-in-out infinite; }
-        @keyframes floating {
-            0% { transform: translateY(0px); }
-            50% { transform: translateY(-15px); }
-            100% { transform: translateY(0px); }
-        }
+        body { font-family: 'Plus Jakarta Sans', sans-serif; scroll-behavior: smooth; }
+        .glass { background: rgba(255, 255, 255, 0.7); backdrop-filter: blur(15px); }
+        @keyframes grow { 0%, 100% { transform: scaleY(0.8); } 50% { transform: scaleY(1.2); } }
+        .animate-grow { animation: grow 1.5s ease-in-out infinite; }
+        .blob { position: absolute; border-radius: 50%; filter: blur(80px); z-index: -1; }
     </style>
 </head>
-<body class="bg-gray-50 text-gray-900 overflow-x-hidden">
+<body class="bg-[#fcfdfe] text-slate-900 overflow-x-hidden">
 
-    <nav class="fixed w-full z-50 glass border-b border-gray-100 py-4 px-6">
-        <div class="max-w-6xl mx-auto flex justify-between items-center">
-            <h1 class="text-2xl font-bold text-emerald-800 tracking-tighter">M.DULAY</h1>
-            <div class="hidden md:flex space-x-8 font-medium">
-                <a href="#about" class="hover:text-emerald-600 transition duration-300">About</a>
-                <a href="#experience" class="hover:text-emerald-600 transition duration-300">Experience</a>
-                <a href="#education" class="hover:text-emerald-600 transition duration-300">Education</a>
-                <a href="#skills" class="hover:text-emerald-600 transition duration-300">Skills</a>
-                <a href="mailto:michaelfloresdulay@gmail.com" class="text-emerald-700 font-bold border-b-2 border-emerald-700">Contact</a>
+    <div class="blob w-[500px] h-[500px] bg-emerald-100/40 top-[-10%] right-[-10%]"></div>
+    <div class="blob w-[400px] h-[400px] bg-blue-100/30 bottom-[-10%] left-[-10%]"></div>
+
+    <nav class="fixed top-0 w-full glass z-50 border-b border-slate-100">
+        <div class="max-w-7xl mx-auto px-6 h-20 flex items-center justify-between">
+            <div class="flex items-center space-x-2 group">
+                <div class="w-10 h-10 bg-emerald-600 text-white flex items-center justify-center rounded-xl font-black text-xl group-hover:rotate-12 transition-transform shadow-lg shadow-emerald-200">M</div>
+                <span class="font-black text-2xl tracking-tighter">DULAY</span>
+            </div>
+            <div class="hidden md:flex items-center space-x-8 text-sm font-bold text-slate-500">
+                <a href="#services" class="hover:text-emerald-600 transition-colors uppercase tracking-widest">Services</a>
+                <a href="#experience" class="hover:text-emerald-600 transition-colors uppercase tracking-widest">Experience</a>
+                <a href="#video" class="hover:text-emerald-600 transition-colors uppercase tracking-widest">About Me</a>
+                <a href="#contact" class="bg-slate-900 text-white px-6 py-3 rounded-2xl hover:bg-emerald-600 transition-all shadow-xl shadow-slate-200">Hire Me</a>
             </div>
         </div>
     </nav>
 
-    <section class="pt-40 pb-24 px-6 emerald-gradient text-white">
-        <div class="max-w-6xl mx-auto flex flex-col md:flex-row items-center gap-12">
-            <div class="md:w-2/3" data-aos="fade-right">
-                <h1 class="text-6xl font-extrabold mb-6 leading-tight">Michael F. Dulay</h1>
-                <p class="text-xl mb-8 opacity-90 font-light max-w-xl">Biology graduate & Certified Bookkeeper. I bridge the gap between scientific precision and administrative efficiency.</p>
+    <section class="relative pt-40 pb-24 px-6">
+        <div class="max-w-7xl mx-auto grid lg:grid-cols-2 gap-16 items-center">
+            <div class="space-y-8">
+                <div class="inline-flex items-center space-x-2 bg-emerald-50 text-emerald-700 px-4 py-1.5 rounded-full text-sm font-bold border border-emerald-100">
+                    <i data-lucide="sparkles" class="w-4 h-4"></i>
+                    <span>Available for Remote Operations</span>
+                </div>
+                <h1 class="text-6xl md:text-7xl font-black leading-[0.95] tracking-tighter">
+                    Precision <br>
+                    Driven <span class="text-emerald-600">Solutions</span><br>
+                    For Your Business.
+                </h1>
+                <p class="text-xl text-slate-600 leading-relaxed max-w-xl">
+                    Hi, I'm <span class="font-bold text-slate-900">Michael Dulay</span>. A professional Bookkeeper and Admin Specialist. I transform complex operational data into organized results.
+                </p>
                 <div class="flex flex-wrap gap-4">
-                    <a href="MICHAEL DULAY - RESUME.pdf" download class="bg-white text-emerald-800 px-8 py-4 rounded-xl font-bold shadow-xl hover:bg-gray-100 transition transform hover:-translate-y-1 flex items-center gap-3">
-                        <i class="fas fa-file-download"></i> Download Resume
+                    <a href="#contact" class="px-8 py-4 bg-slate-900 text-white rounded-2xl font-black text-lg flex items-center group hover:bg-emerald-600 transition-all shadow-2xl shadow-slate-100">
+                        Let's Collaborate
+                        <i data-lucide="chevron-right" class="ml-2 group-hover:translate-x-1 transition-transform"></i>
+                    </a>
+                    <a href="./MICHAEL DULAY - RESUME.pdf" download class="px-8 py-4 bg-white text-slate-900 border-2 border-slate-100 rounded-2xl font-black text-lg flex items-center hover:border-emerald-600 hover:text-emerald-600 transition-all">
+                        <i data-lucide="file-text" class="mr-2"></i>
+                        Download CV
                     </a>
                 </div>
             </div>
-            <div class="md:w-1/3" data-aos="zoom-in">
-                <div class="w-72 h-72 rounded-3xl border-4 border-white/30 shadow-2xl overflow-hidden mx-auto image-float">
-                    <img src="your-photo.jpg" alt="Michael Dulay" class="w-full h-full object-cover">
+            
+            <div class="relative flex justify-center">
+                <div class="aspect-[4/5] w-full max-w-md rounded-[4rem] bg-slate-100 overflow-hidden shadow-2xl border-[12px] border-white group">
+                    <img src="./your-photo.jpg" alt="Michael Dulay" class="w-full h-full object-cover group-hover:scale-105 transition-transform duration-700">
+                    <div class="absolute inset-0 bg-emerald-900/10 opacity-0 group-hover:opacity-100 transition-opacity"></div>
                 </div>
             </div>
         </div>
     </section>
 
-    <section id="about" class="py-24 px-6 max-w-5xl mx-auto" data-aos="fade-up">
-        <h2 class="text-4xl font-bold mb-10 text-emerald-900 text-center">Professional Profile</h2>
-        <div class="bg-white p-10 rounded-3xl shadow-xl border border-gray-100 relative">
-            <i class="fas fa-quote-left text-emerald-100 text-6xl absolute top-6 left-6"></i>
-            <p class="relative z-10 text-gray-700 leading-relaxed text-xl italic text-center">
-                Detail-oriented BS Biology graduate and TESDA Bookkeeping NCIII certified professional with over 2 years of experience in administrative support and e-commerce operations. Proven track record at Ace Lights Trading handling data entry, payroll processing, inventory management, and online order fulfillment (Shopee/Lazada). Complemented by freelance tutoring experience, demonstrating strong communication, scheduling, and organizational skills. Proficient in Microsoft Office, Google Workspace, and Canva. Reliable remote worker committed to accuracy, confidentiality, and efficient task management.
-            </p>
-        </div>
-    </section>
-
-    <section id="experience" class="py-24 bg-white px-6">
-        <div class="max-w-4xl mx-auto">
-            <h2 class="text-4xl font-bold mb-16 text-emerald-900 flex items-center gap-4" data-aos="fade-right">
-                <span class="w-12 h-1 bg-emerald-500"></span> Experience
+    <section id="video" class="py-24 px-6 bg-slate-50">
+        <div class="max-w-4xl mx-auto text-center space-y-12">
+            <h2 class="text-4xl font-black tracking-tighter flex items-center justify-center">
+                <i data-lucide="play-circle" class="w-10 h-10 mr-4 text-emerald-600"></i>
+                Get To Know Me
             </h2>
-            <div class="space-y-16">
-                <div class="relative border-l-4 border-emerald-50 pl-10 pb-2" data-aos="fade-up">
-                    <div class="absolute -left-[14px] top-0 w-6 h-6 bg-emerald-500 rounded-full border-4 border-white shadow"></div>
-                    <span class="text-sm font-black text-emerald-600 tracking-widest uppercase">Aug 2023 - Present</span>
-                    <h3 class="text-2xl font-bold mt-2">Part-Time Tutor (Freelance)</h3>
-                    <p class="text-gray-500 font-medium mb-4">Cuyapo, Nueva Ecija, Ph</p>
-                    <ul class="space-y-3 text-gray-600">
-                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-emerald-500 mt-1"></i> Personalized instruction in English, Science, and Mathematics for elementary levels.</li>
-                        <li class="flex items-start gap-2"><i class="fas fa-check-circle text-emerald-500 mt-1"></i> Development of customized learning materials and tracking student comprehension.</li>
-                    </ul>
-                </div>
-
-                <div class="relative border-l-4 border-emerald-50 pl-10" data-aos="fade-up">
-                    <div class="absolute -left-[14px] top-0 w-6 h-6 bg-emerald-500 rounded-full border-4 border-white shadow"></div>
-                    <span class="text-sm font-black text-emerald-600 tracking-widest uppercase">July 2020 - April 2023</span>
-                    <h3 class="text-2xl font-bold mt-2">Salesman / Admin Support</h3>
-                    <p class="text-gray-500 font-medium mb-6">Ace Lights Trading | Guimba, Nueva Ecija, Ph</p>
-                    <div class="grid md:grid-cols-2 gap-6">
-                        <div class="bg-emerald-50/50 p-6 rounded-2xl">
-                            <h4 class="font-bold text-emerald-800 mb-3"><i class="fas fa-file-invoice-dollar mr-2"></i>Admin & Records</h4>
-                            <p class="text-sm text-gray-600 leading-relaxed">Handled payroll processing, electronic quotations, and daily sales reconciliation with 100% accuracy.</p>
-                        </div>
-                        <div class="bg-emerald-50/50 p-6 rounded-2xl">
-                            <h4 class="font-bold text-emerald-800 mb-3"><i class="fas fa-box-open mr-2"></i>E-Commerce</h4>
-                            <p class="text-sm text-gray-600 leading-relaxed">Managed end-to-end order processing for Shopee and Lazada, updating product listings and monitoring inventory.</p>
-                        </div>
-                    </div>
-                </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="video" class="py-24 bg-gray-900 text-white px-6">
-        <div class="max-w-4xl mx-auto text-center" data-aos="zoom-in">
-            <h2 class="text-4xl font-bold mb-4">Meet Michael</h2>
-            <p class="text-emerald-400 mb-12 font-medium tracking-wide">VIDEO INTRODUCTION</p>
-            <div class="relative aspect-video rounded-3xl overflow-hidden shadow-2xl border-8 border-gray-800">
-                <video controls class="w-full h-full object-cover shadow-inner">
-                    <source src="your-video.mp4" type="video/mp4">
-                    Your browser does not support the video tag.
+            <div class="rounded-[3rem] overflow-hidden shadow-2xl border-[8px] border-white bg-black aspect-video">
+                <video class="w-full h-full object-cover" controls>
+                    <source src="./your-video.mp4" type="video/mp4">
                 </video>
             </div>
         </div>
     </section>
 
-    <section id="education" class="py-24 px-6 bg-gray-50">
-        <div class="max-w-6xl mx-auto grid md:grid-cols-2 gap-16">
-            <div data-aos="fade-right">
-                <h2 class="text-3xl font-bold mb-10 text-emerald-900">Academic Background</h2>
-                <div class="space-y-6">
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border-r-8 border-emerald-500">
-                        <h4 class="font-bold text-xl text-emerald-800">MS Biology</h4>
-                        <p class="text-gray-600 font-medium">Central Luzon State University</p>
-                        <p class="text-sm text-gray-400">2023 - 2026 (Ongoing)</p>
+    <section id="services" class="py-32 px-6">
+        <div class="max-w-7xl mx-auto text-center">
+            <h2 class="text-5xl font-black tracking-tighter mb-20">My Core Services</h2>
+            <div class="grid md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <div class="p-8 bg-white border border-slate-100 rounded-[3rem] hover:shadow-2xl transition-all text-left">
+                    <div class="w-12 h-12 bg-emerald-600 text-white rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="database"></i>
                     </div>
-                    <div class="bg-white p-6 rounded-2xl shadow-sm border-r-8 border-emerald-500">
-                        <h4 class="font-bold text-xl text-emerald-800">BS Biology - Biotechnology</h4>
-                        <p class="text-gray-600 font-medium">Central Luzon State University</p>
-                        <p class="text-sm text-gray-400">2018 - 2022</p>
-                    </div>
-                </div>
-            </div>
-            <div data-aos="fade-left">
-                <h2 class="text-3xl font-bold mb-10 text-emerald-900">Certifications</h2>
-                <div class="grid grid-cols-1 gap-4">
-                    <div class="flex items-center gap-6 bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition">
-                        <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 text-2xl">
-                            <i class="fas fa-award"></i>
-                        </div>
-                        <div>
-                            <p class="font-bold text-lg">Bookkeeping NC III</p>
-                            <p class="text-sm text-gray-500 uppercase font-bold tracking-tighter">TESDA Certified</p>
-                        </div>
-                    </div>
-                    <div class="flex items-center gap-6 bg-white p-6 rounded-2xl shadow-sm hover:shadow-md transition">
-                        <div class="w-16 h-16 bg-emerald-100 rounded-full flex items-center justify-center text-emerald-600 text-2xl">
-                            <i class="fas fa-language"></i>
-                        </div>
-                        <div>
-                            <p class="font-bold text-lg">TEFL Certification</p>
-                            <p class="text-sm text-gray-500 uppercase font-bold tracking-tighter">Teacher Record</p>
-                        </div>
+                    <h3 class="text-xl font-black mb-4">Admin & Ops</h3>
+                    <p class="text-slate-500 text-sm mb-6">High-precision data management, payroll, and virtual assistance.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">MS Office</span>
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">Payroll</span>
                     </div>
                 </div>
-            </div>
-        </div>
-    </section>
-
-    <section id="skills" class="py-24 px-6">
-        <div class="max-w-6xl mx-auto">
-            <h2 class="text-4xl font-bold mb-16 text-center text-emerald-900">Technical Expertise</h2>
-            <div class="grid grid-cols-2 md:grid-cols-4 gap-8">
-                <div class="bg-white p-8 rounded-3xl text-center shadow-sm hover:shadow-xl hover:-translate-y-3 transition duration-500" data-aos="zoom-in">
-                    <i class="fas fa-file-excel text-4xl text-emerald-600 mb-4"></i>
-                    <p class="font-bold text-gray-800">MS Office & Excel</p>
+                <div class="p-8 bg-white border border-slate-100 rounded-[3rem] hover:shadow-2xl transition-all text-left">
+                    <div class="w-12 h-12 bg-blue-600 text-white rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="shopping-cart"></i>
+                    </div>
+                    <h3 class="text-xl font-black mb-4">E-Commerce</h3>
+                    <p class="text-slate-500 text-sm mb-6">Shopee/Lazada management from listings to fulfillment.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">Shopee</span>
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">Lazada</span>
+                    </div>
                 </div>
-                <div class="bg-white p-8 rounded-3xl text-center shadow-sm hover:shadow-xl hover:-translate-y-3 transition duration-500" data-aos="zoom-in" data-aos-delay="100">
-                    <i class="fas fa-share-nodes text-4xl text-emerald-600 mb-4"></i>
-                    <p class="font-bold text-gray-800">Google Workspace</p>
+                <div class="p-8 bg-white border border-slate-100 rounded-[3rem] hover:shadow-2xl transition-all text-left">
+                    <div class="w-12 h-12 bg-purple-600 text-white rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="trending-up"></i>
+                    </div>
+                    <h3 class="text-xl font-black mb-4">Bookkeeping</h3>
+                    <p class="text-slate-500 text-sm mb-6">NC III Certified professional managing financial accuracy.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">QuickBooks</span>
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">Audit</span>
+                    </div>
                 </div>
-                <div class="bg-white p-8 rounded-3xl text-center shadow-sm hover:shadow-xl hover:-translate-y-3 transition duration-500" data-aos="zoom-in" data-aos-delay="200">
-                    <i class="fas fa-bezier-curve text-4xl text-emerald-600 mb-4"></i>
-                    <p class="font-bold text-gray-800">Canva / Capcut</p>
-                </div>
-                <div class="bg-white p-8 rounded-3xl text-center shadow-sm hover:shadow-xl hover:-translate-y-3 transition duration-500" data-aos="zoom-in" data-aos-delay="300">
-                    <i class="fas fa-calculator text-4xl text-emerald-600 mb-4"></i>
-                    <p class="font-bold text-gray-800">Quickbooks (Basic)</p>
+                <div class="p-8 bg-white border border-slate-100 rounded-[3rem] hover:shadow-2xl transition-all text-left">
+                    <div class="w-12 h-12 bg-orange-500 text-white rounded-2xl flex items-center justify-center mb-6">
+                        <i data-lucide="book-open"></i>
+                    </div>
+                    <h3 class="text-xl font-black mb-4">Education</h3>
+                    <p class="text-slate-500 text-sm mb-6">TEFL certified lesson planning and instructions.</p>
+                    <div class="flex flex-wrap gap-2">
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">TEFL</span>
+                        <span class="text-[10px] font-bold bg-slate-50 px-3 py-1 rounded-full uppercase">Tutoring</span>
+                    </div>
                 </div>
             </div>
         </div>
     </section>
 
-    <footer class="py-16 bg-white text-center border-t border-gray-100">
-        <h3 class="text-2xl font-bold text-emerald-900 mb-6">Let's connect.</h3>
-        <div class="flex justify-center gap-8 text-3xl text-gray-300 mb-8">
-            <a href="mailto:michaelfloresdulay@gmail.com" class="hover:text-emerald-600 transition"><i class="fas fa-envelope"></i></a>
-            <a href="#" class="hover:text-emerald-600 transition"><i class="fab fa-linkedin"></i></a>
+    <section id="contact" class="py-40 px-6 bg-slate-900 text-white">
+        <div class="max-w-5xl mx-auto text-center space-y-10">
+            <h2 class="text-6xl font-black tracking-tighter">Let's solve your <br>operational <span class="text-emerald-500">challenges.</span></h2>
+            <div class="flex flex-col md:flex-row gap-6 justify-center">
+                <a href="mailto:michaelfloresdulay@gmail.com" class="bg-white text-slate-900 p-6 rounded-3xl flex items-center space-x-4 hover:bg-emerald-50 transition-all">
+                    <i data-lucide="mail" class="text-emerald-600"></i>
+                    <span class="font-bold">michaelfloresdulay@gmail.com</span>
+                </a>
+                <div class="bg-slate-800 p-6 rounded-3xl flex items-center space-x-4 border border-white/5">
+                    <i data-lucide="phone" class="text-emerald-400"></i>
+                    <span class="font-bold">0995-024-5384</span>
+                </div>
+            </div>
+            <p class="text-slate-500 uppercase tracking-widest text-xs font-black">© 2026 Michael Dulay • Nueva Ecija, PH</p>
         </div>
-        <p class="text-gray-400 font-medium">Michael F. Dulay | 0995-024-5384</p>
-        <p class="text-xs text-gray-300 mt-4 uppercase tracking-widest">Nueva Ecija, Philippines</p>
-    </footer>
+    </section>
 
-    <script src="https://unpkg.com/aos@2.3.1/dist/aos.js"></script>
-    <script>AOS.init({ duration: 1000, once: true, offset: 100 });</script>
+    <script>
+        // Initialize Lucide icons
+        lucide.createIcons();
+    </script>
 </body>
 </html>
